@@ -1,4 +1,6 @@
 #! /usr/bin/env python3
+"""This is the consumer script"""
+
 import json
 from kafka import KafkaConsumer
 

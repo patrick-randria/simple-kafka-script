@@ -1,4 +1,7 @@
 #! /usr/bin/env python3
+
+"""This is the producer script"""
+
 import json
 import time
 import urllib.request
@@ -6,7 +9,7 @@ import urllib.request
 # Run `pip install kafka-python` to install this package
 from kafka import KafkaProducer
 
-API_KEY = "your_api" # FIXME
+API_KEY = "your_key" # FIXME
 url = "https://api.jcdecaux.com/vls/v1/stations?apiKey={}".format(API_KEY)
 
 producer = KafkaProducer(bootstrap_servers="localhost:9092")

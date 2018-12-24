@@ -22,3 +22,9 @@ Create topics with desired partitions number (here 10)
 ```
 $ ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 10 --topic empty-stations
 ```
+
+Make sur to execute the producer before the consumer
+```
+$ python get-stations.py
+$ python monitor-empty-stations.py
+```
